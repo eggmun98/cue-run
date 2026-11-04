@@ -1,0 +1,39 @@
+{
+  "name": "cue-run",
+  "version": "0.2.1",
+  "description": "Run your own short commands from anywhere: q build admin → pnpm --filter admin build",
+  "type": "module",
+  "bin": {
+    "q": "bin/q.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggmun98/quick-run.git"
+  },
+  "homepage": "https://github.com/eggmun98/quick-run#readme",
+  "bugs": {
+    "url": "https://github.com/eggmun98/quick-run/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cli",
+    "alias",
+    "shortcut",
+    "command",
+    "task-runner"
+  ],
+  "author": "eggmun",
+  "license": "MIT"
+}
